@@ -1,7 +1,7 @@
 from setuptools import setup
 from os import path
 
-import pdfminer as package
+import pdfminer6 as package
 
 
 with open(path.join(path.abspath(path.dirname(__file__)), 'README.md')) as f:
@@ -10,8 +10,8 @@ with open(path.join(path.abspath(path.dirname(__file__)), 'README.md')) as f:
 setup(
     name='pdfminer.six',
     version=package.__version__,
-    packages=['pdfminer'],
-    package_data={'pdfminer': ['cmap/*.pickle.gz']},
+    packages=['pdfminer6'],
+    package_data={'pdfminer6': ['cmap/*.pickle.gz']},
     install_requires=[
         'chardet ; python_version > "3.0"',
         'cryptography',
